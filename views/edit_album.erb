@@ -1,0 +1,19 @@
+<form action="/album/<%= @album.id %>/edit" method="post"><!-- @album is referencing the @album defined in controller edit  -->
+  <label for="title">Title:</label>
+    <input id="title" type="text" name="title" value="<%= @album.title %>"/>
+
+  <label for="album_art">Album art url:</label>
+    <input id="album_art" type="text" name="album_art" value="<%= @album.album_art %>">
+
+  <label for="genre">Genre:</label>
+  	<input id="genre" type="text" name="genre" value="<%= @album.genre %>">
+
+  <label for="artist">Artist: </label>
+  <select name="artist_id" id="artist">
+  <% @artists.each do |artist| %>
+  <option value="<%=artist.id%>"><%=artist.name%></option>
+  <% end %>
+  </select>
+
+<input  type="submit" value="Edit album">
+</form>

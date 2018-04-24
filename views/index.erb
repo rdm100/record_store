@@ -1,0 +1,39 @@
+<h1> Inventory </h1>
+
+<h1>Artists</h1>
+<div class="container">
+<% @artists.each do |artist| %>
+<div class="margin1">
+<p>Name: <%= artist.name() %></p>
+<img class="artist_image" src= "<%= artist.image %>" >
+<p><a href="/artist/<%=artist.id%>">Show Artist Profile </a></p>
+<form  action="/artist/<%= artist.id %>/delete" method="post">
+  <input type='submit' value="Delete">
+</form>
+<form action="/artist/<%= artist.id %>/edit" method="get">
+	<input type='submit' value="Edit">
+</form>
+<hr />
+</div>
+<% end %>
+</div>
+
+<h1>Albums</h1>
+<div class="container">
+<% @albums.each do |album| %>
+<div class="margin1">
+<p>Title: <%= album.title() %></p>
+<p>Stock Level: <%= album.stock_level() %></p>
+<p>Quantity in stock: <%= album.in_stock() %></p>
+<img class="album_art" src= "<%= album.album_art %>" >
+<p><a href="/album/<%=album.id%>">Show Album Profile </a></p>
+<form  action="/album/<%= album.id %>/delete" method="post">
+  <input type='submit' value="Delete">
+</form>
+<form action="/album/<%= album.id %>/edit" method="get">
+	<input type='submit' value="Edit">
+</form>
+<hr />
+</div>
+<% end %>
+</div>

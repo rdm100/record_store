@@ -1,0 +1,11 @@
+<form action="/artist/<%= @artist.id %>/edit" method="post"><!-- @artist is referencing the @artist defined in controller edit  -->
+  <label for="name">Name:</label>
+    <input id="name" type="text" name="name" value="<%= @artist.name %>"/>
+
+
+  <label for="image">Image url:</label>
+    <input id="image" type="text" name="image" value="<%= @artist.image %>">
+
+
+<input  type="submit" value="edit artist">
+</form>
