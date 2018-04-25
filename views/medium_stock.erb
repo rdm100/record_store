@@ -1,0 +1,23 @@
+<h1>Albums medium in stock</h1>
+<div class="container">
+<% @albums.each do |album| %>
+   <% if album.stock_level == "Medium" %>
+<div class="margin1">
+<p>Title: <%= album.title() %></p>
+<p>Stock Level: <%= album.stock_level() %></p>
+<p>Quantity in stock: <%= album.in_stock() %></p>
+<p>Profit margin: <%= album.profit_margin() %></p>
+<p>Customer rating: <%= album.customer_rating() %></p>
+<img class="album_art" src= "<%= album.album_art %>" >
+<p><a href="/album/<%=album.id%>">Show Album Profile </a></p>
+<form  action="/album/<%= album.id %>/delete" method="post">
+  <input type='submit' value="Delete">
+</form>
+<form action="/album/<%= album.id %>/edit" method="get">
+	<input type='submit' value="Edit">
+</form>
+<hr />
+</div>
+<% end %>
+<% end %>
+</div>

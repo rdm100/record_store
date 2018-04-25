@@ -19,6 +19,30 @@ get "/album/new" do
   erb(:album_new)
 end
 
+get "/album/high" do
+  @albums = Album.all()
+  @artists = Artist.all()
+  erb(:high_stock)
+end
+
+get "/album/medium" do
+  @albums = Album.all()
+  @artists = Artist.all()
+  erb(:medium_stock)
+end
+
+get "/album/low" do
+  @albums = Album.all()
+  @artists = Artist.all()
+  erb(:low_stock)
+end
+
+get "/album/no" do
+  @albums = Album.all()
+  @artists = Artist.all()
+  erb(:no_stock)
+end
+
 #show
 get "/album/:id" do
   @album = Album.find(params[:id] )
@@ -53,3 +77,4 @@ album = Album.find(params[:id] )
 album.delete()
 redirect to "/"
 end
+

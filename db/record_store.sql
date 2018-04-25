@@ -15,5 +15,10 @@ CREATE TABLE albums(
   stock_level VARCHAR(20),
   artist_id INT8 REFERENCES artists(id) ON DELETE CASCADE,
   genre VARCHAR(255) NOT NULL,
-  album_art VARCHAR(255)
+  album_art VARCHAR(255),
+  buy_price FLOAT8,
+  sell_price FLOAT8,
+  profit_margin FLOAT8,
+  customer_rating INT4,
+  percentage_of_profit FLOAT8
 );

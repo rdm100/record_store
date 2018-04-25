@@ -1,5 +1,12 @@
 <h1> Inventory </h1>
 
+<h1>Total value of stock</h1>
+<p class="margin2">£<%= Album.total_value_of_stock %></p>
+<h1>Total number of albums</h1>
+<p class="margin2"><%= Album.total_number_of_albums %></p>
+<h1>Average buy price</h1>
+<p class="margin2">£<%= Album.average_buy_price %></p>
+
 <h1>Artists</h1>
 <div class="container">
 <% @artists.each do |artist| %>
@@ -25,6 +32,9 @@
 <p>Title: <%= album.title() %></p>
 <p>Stock Level: <%= album.stock_level() %></p>
 <p>Quantity in stock: <%= album.in_stock() %></p>
+<p>Profit margin: <%= album.profit_margin() %></p>
+<p>Customer rating: <%= album.customer_rating() %></p>
+<p>Percentage of profit: <%= album.percentage_of_profit() %></p>
 <img class="album_art" src= "<%= album.album_art %>" >
 <p><a href="/album/<%=album.id%>">Show Album Profile </a></p>
 <form  action="/album/<%= album.id %>/delete" method="post">

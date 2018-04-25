@@ -19,19 +19,19 @@ artist3.save()
 artist4.save()
 
 
-album1 = Album.new({ 'title' => 'Diamonds and pearls', 'in_stock' => 5, 'artist_id' => artist1.id(), 'genre' => 'Funk', 'album_art' => '/images/albums/diamonds_and_pearls.jpg' })
+album1 = Album.new({ 'title' => 'Diamonds and pearls', 'in_stock' => 5, 'artist_id' => artist1.id(), 'genre' => 'Funk', 'album_art' => '/images/albums/diamonds_and_pearls.jpg', 'buy_price' => 5.00, 'sell_price' => 10.00, 'customer_rating' => 4 })
 
-album2 = Album.new({ 'title' => 'Musicology', 'in_stock' => 0, 'artist_id' => artist1.id(), 'genre' => 'Funk', 'album_art' => '/images/albums/musicology.jpg' })
+album2 = Album.new({ 'title' => 'Musicology', 'in_stock' => 0, 'artist_id' => artist1.id(), 'genre' => 'Funk', 'album_art' => '/images/albums/musicology.jpg' , 'buy_price' => 5.00, 'sell_price' => 10.00, 'customer_rating' => 3})
 
-album3 = Album.new({ 'title' => 'Gangsta bitch volume 1', 'in_stock' => 20, 'artist_id' => artist2.id(), 'genre' => 'Rap', 'album_art' => '/images/albums/gangsta_bitch_vol_1.jpg' })
+album3 = Album.new({ 'title' => 'Gangsta bitch volume 1', 'in_stock' => 20, 'artist_id' => artist2.id(), 'genre' => 'Rap', 'album_art' => '/images/albums/gangsta_bitch_vol_1.jpg', 'buy_price' => 5.00, 'sell_price' => 10.00, 'customer_rating' => 4 })
 
-album4 = Album.new({ 'title' => 'Gangsta bitch volume 2', 'in_stock' => 50, 'artist_id' => artist2.id(), 'genre' => 'Rap', 'album_art' => '/images/albums/gangsta_bitch_vol_2.jpg' })
+album4 = Album.new({ 'title' => 'Gangsta bitch volume 2', 'in_stock' => 50, 'artist_id' => artist2.id(), 'genre' => 'Rap', 'album_art' => '/images/albums/gangsta_bitch_vol_2.jpg', 'buy_price' => 5.00, 'sell_price' => 10.00, 'customer_rating' => 3 })
 
-album5 = Album.new({ 'title' => 'More life', 'in_stock' => 60, 'artist_id' => artist3.id(), 'genre' => 'Rap', 'album_art' => '/images/albums/more_life.jpg' })
+album5 = Album.new({ 'title' => 'More life', 'in_stock' => 60, 'artist_id' => artist3.id(), 'genre' => 'Rap', 'album_art' => '/images/albums/more_life.jpg', 'buy_price' => 5.00, 'sell_price' => 10.00, 'customer_rating' => 4 })
 
-album6 = Album.new({ 'title' => 'Views', 'in_stock' => 50, 'artist_id' => artist3.id(), 'genre' => 'Rap', 'album_art' => '/images/albums/views.jpg' })
+album6 = Album.new({ 'title' => 'Views', 'in_stock' => 50, 'artist_id' => artist3.id(), 'genre' => 'Rap', 'album_art' => '/images/albums/views.jpg', 'buy_price' => 5.00, 'sell_price' => 10.00, 'customer_rating' => 4 })
 
-album7 = Album.new({ 'title' => 'Thank me later', 'in_stock' => 50, 'artist_id' => artist3.id(), 'genre' => 'Rap', 'album_art' => '/images/albums/thank_me_later.jpg' })
+album7 = Album.new({ 'title' => 'Thank me later', 'in_stock' => 50, 'artist_id' => artist3.id(), 'genre' => 'Rap', 'album_art' => '/images/albums/thank_me_later.jpg', 'buy_price' => 5.00, 'sell_price' => 10.00, 'customer_rating' => 3 })
 
 
 album1.save()

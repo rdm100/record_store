@@ -18,9 +18,23 @@
 	margin: 10px;
 }
 
+.margin2{
+	margin-left: 120px;
+	font-family: 'Black Han Sans';
+	font-size: 18px;
+}
+
+h1:first-of-type{
+	color: white;
+	font-size: 25px;
+}
+
 h1{
 	margin-left: 120px;
+	font-family: 'Black Han Sans';
+	font-size: 20px;
 }
+
 
 input {
     width: 100%;
@@ -104,4 +118,17 @@ body {
 
 .padding-right{
 	padding-right: 10px;
+}
+
+/*body{
+	font-family: 'Black Han Sans', sans-serif;
+}*/
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
 }
